@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Fredericka+the+Great" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  <link rel="stylesheet" href="css/style3.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+
+
+
+  <div class="parallax">
+
+     <button onclick="topFunction()" id="myBtn" title="Go to top" ><i class="fas fa-angle-double-up"></i></i></button>
+
+    <div class="container">
+
+   
+     <div class="box"><!--  CHILD 1 -->
+        <div class="content" id="brand" ><a href="index.html"><h1 >ZZ's Produce</h1></a>
+        </div>
+      </div>
+
+     <div class="box"> <!--  CHILD 2 -->
+        <div class="content">
+          <div class="vr-1"></div>
+        </div>
+     </div>
+
+     <div class="box"> <!--  CHILD 3 -->
+        <div class="content">
+          <div class="topnav"> 
+            <div class="nav-1"><a href="index.html">Home</a></div>
+            
+            <div class="hr-1"></div>
+            <div class="nav-2"><a href="about.html">About</a></div>
+            
+            <div class="hr-2"></div>
+            <div class="nav-3"><a href="#map">Map</a></div>
+
+            <div class="hr-3"></div>
+            <div class="nav-4"><a href="contact.html">Contact</a></div>
+
+          </div> 
+        </div>
+     </div>
+
+        <div class="box"> <!--  CHILD 4 -->
+        <div class="content">
+              <div class="vr-2"></div>
+        </div>
+     </div>
+
+     <div class="box">  <!-- CHILD 5 -->
+        <div class="content">   
+            <h2 class="banner">Discover something new just around the corner!</h2>
+        </div>
+     </div>
+
+     <div class="box"> <!--  CHILD 6 -->
+        <div class="content">
+              <div class="vr-3"></div>
+        </div>
+     </div>
+
+      <div class="box">  <!-- CHILD 7 -->
+        <div class="content" id="map-img">
+               <h2 class="guide">Select a region below to search produce and groceries around the world!  </h2>
+        </div>
+     </div>
+
+
+   <div class="box"> <!--  CHILD 8 -->
+        <div class="content">
+              <div class="vr-4"></div>
+        </div>
+     </div>
+
+      <div class="box"> <!--  CHILD 9 -->
+        <div class="content">
+          <div class="exp" id="map">
+                <img src="images/world/testwood4.png" alt="" usemap="#workmap">
+              <a href="america.html" class="amer"><div></div></a>   
+              <a href="latin-america.html" class="lat-amer"><div></div></a> 
+              <a href="africa.html" class="afr"><div></div></a> 
+              <a href="europe.html" class="euro"><div></div></a> 
+              <a href="middle east.html" class="mid-east"><div></div></a> 
+              <a href="asia.html" class="asia"><div></div></a> 
+          </div>  
+
+
+        </div>
+     </div>
+
+    <div class="box"> <!--  CHILD 10 -->
+        <div class="content">
+              <div class="vr-5"></div>
+        </div>
+     </div>
+
+
+      <div class="box" id="foot">  <!-- CHILD 11 -->
+        <div class="content">
+          <div id="footer">
+             <div class="f-1"><h2>Locations & Contact</h2></div>
+
+              <div class="f-2"></div>
+
+             <span class="f-3">
+              <h3>Ann Arbor</h3>
+              <h4> 4092 Packard St <br>Ann Arbor, MI<br> 48108 <br> (734) 822-0494</h4>
+              </span>
+
+              <div class="vr-4"></div>
+
+            <span class="f-4">
+              <h3>Lansing</h3>
+              <h4> 5501 S.Cedar St <br> Lansing, MI <br> 48911 <br> (517) 887-0264 </h4>
+            </span>
+
+             <div class="vr-7"></div>
+
+             <div class="soc-1">
+                 <a href="z.zangana@yahoo.com" class="fa fa-yahoo"></a>
+
+             </div>
+                <span class="f-ann"><a href="contact.html"><h3>Ann Arbor</h3></a></span>
+          <span class="f-lan"><a href="contact.html"><h3>Lansing</h3></a></span>
+
+          </div> <!-- FOOTER DIV -->
+       
+
+           <span class="f-short"><a href="contact.html">Contact</a></span>
+        </div>
+      </div>
+
+     </div> <!-- LAST DIV -->
+
+      <div class="parallax"></div>
+
+ <script src="js/menu.js"></script>
+
+
+</body>
+</html>
