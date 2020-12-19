@@ -13,3 +13,10 @@ site: http://zzs-produce.com/
   + FEATURES I WILL ADD : 
   -   Due to the current pandemic situation I will add some features to help customers shop and browse items. However, client does not have the ability to implement these features       on a physical level. Such as, that if a customer makes a pick up order the client can not process orders due to limit employees. But none the less, I will build a test site 
       for personal technical development as well as possibilty of future ability or need for such a feature. 
+
+// ------------------------------------------------------------------- 12/18/20 ---------------------------------------------------------------------------------- //
+
++ Worked on wireframe and started to implement structure of site. Adding a animated off-campus menu and mock up hero section.
+
+++ Goals for tomorrow:
+    - Develop hero section.
