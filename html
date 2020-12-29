@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/menu.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
@@ -30,10 +31,10 @@
 
 <nav class="main-navigation">
   <ul>
-    <li><a href="#0">Home</a></li>
-    <li><a href="#0">About</a></li>
-    <li><a href="#0">Contact</a></li>
-    <li><a href="#0">Dance</a></li>
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#region">Explore</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
@@ -41,7 +42,7 @@
     
     <main class="page-container">
 
-        <div class="hero-image">
+        <div class="hero-image" id="hero">
             <div class="hero-text">
               <!-- <h1 style="font-size:50px">ZZ's Produce</h1> -->
               <p>Exporing the world's flavors, just around the corner.</p>
@@ -52,9 +53,13 @@
           </div>
 
           <section id="about">
-      <h1>About Us</h1>
-      <p>When we first opened ZZ’s Produce in Ann Arbor we saw a great need within our community. A community with such a rich and diverse group of international inhabitants was absent of a grocery store that catered to their native cuisines. Yes, there were a few locations around selling international items but the selection was small and/or the price was higher than one could afford.</p>
-      <a href="#about">Learn More &#8594;</a>
+            <div class="abt-container">
+              <h1>About Us</h1>
+              <p>When we first opened ZZ’s Produce in Ann Arbor we saw a great need within our community. A community with such a rich and diverse group of international inhabitants was absent of a grocery store that catered to their native cuisines. Yes, there were a few locations around selling international items but the selection was small and/or the price was higher than one could afford.</p>
+              <a href="#about">Learn More &#8594;</a>
+
+            </div>
+ 
 
     </section>
 
@@ -62,17 +67,22 @@
 
     <section id="region">
 
-      <div class="menu">
+      <div class="reg-container">
         <div class="label">Region</div>
-        <div class="spacer"></div>
-        <div class="item"><span>North America</span></div>
-        <div class="item"><span>Centeral America</span></div>
-        <div class="item"><span>South America</span></div>
-        <div class="item"><span>Europe</span></div>
-        <div class="item"><span>Africa</span></div>
-        <div class="item"><span>Asian</span></div>
+        <!-- <div class="spacer"></div> -->
+<div id="picture" ></div>
+        <ul>
+          <li rel="one"  class="item"> <a href="#" data-text='North America'><span>   North America</span></a> </li>
+          <li rel="two" class="item"> <a href="" data-text='Central America'><span>Centeral America</span></a>   </li>
+          <li rel="three" class="item"><a href="" data-text='South America'><span>South America</span></a> </li>
+          <li rel="four" class="item"><a href="" data-text='Europe'> <span>Europe</span></a> </li>
+          <li rel="five" class="item"><a href="" data-text='Africa'><span>Africa</span></a> </li>
+          <li rel="six" class="item"> <a href="" data-text='Asia'><span>Asia</span></a> </li>
+         
+      </ul>
       </div>
 
+      
 
       
     </section>
@@ -89,7 +99,7 @@
       </div>
     </section>
 
-    <section class="footer">
+    <section class="footer" id="contact">
 <div class="contact">
   <ul>
     <li>Contact</li>
@@ -105,5 +115,9 @@
 
 
     <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- <script type="text/javascript">
+ 
+    </script> -->
 </body>
 </html>
