@@ -5,6 +5,7 @@
   --color-secondary: #36301a;
   --color-third: #b9cb52;
   --color-fourth: #c65f3e;
+
   --duration: 1s;
   --nav-duration: calc(var(--duration) / 4);
   --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -69,6 +70,7 @@ h4 {
 p {
   line-height: 1.4;
   font-family: var(--font-heading);
+  font-weight: 300;
 }
 
 a {
@@ -486,8 +488,12 @@ header {
 
 #region {
   height: 100vh;
-  margin: 0 1em;
+  margin: 0;
   // background-color: #364c62;
+}
+
+.reg-container {
+  margin: 0 1em;
 }
 
 .accordion .btn-overly {
@@ -556,7 +562,7 @@ header {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   border-radius: 15px;
   padding: 0;
-  background-color: var(--color-fourth);
+  background-color: var(--color-primary);
   max-height: 0;
   overflow-x: hidden;
   transition: max-height 0.6s ease-out;
@@ -633,6 +639,7 @@ header {
 .cnt-mr a {
   text-align: center;
   margin-bottom: 1em;
+  color: var(--color-fourth);
 }
 
 .one {
@@ -655,6 +662,10 @@ header {
   background-image: url("../img/pers2.jpg");
 }
 
+.six {
+  background-image: url("../img/clean-1\ \(1\).jpg");
+}
+
 // ---------------- REGION IMAGE -----------------//
 
 // -------------------- Footer--------------------- //
@@ -666,24 +677,44 @@ header {
 }
 
 .ban-text {
+  height: 27vh;
   grid-column: 1 / span 2;
   grid-row: 1;
   justify-self: center;
+  font-size: 1.6em;
+  background-color: var(--color-fourth);
+  text-align: center;
 }
 
 .cnt-loc {
   padding: 0;
-  grid-column: 1 / span 2;
+  grid-column: 1;
   grid-row: 2;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: var(--font-heading);
 }
 
-.cnt-loc li {
-  justify-self: flex-start;
+.cnt-loc ul {
+  padding: 0;
+  justify-self: center;
+}
+
+.cnt-loc-2 {
+  padding: 0;
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cnt-loc-2 ul {
+  padding: 0;
+  justify-self: center;
 }
 
 // .ann-arbor {
@@ -700,25 +731,178 @@ header {
   margin: 0;
 }
 
-.a2-map {
+.map-loc {
+  // border: solid 3px #202020;
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}
+
+// -------- OUR STORY PAGE -------------------------//
+
+#about-hero {
+  // margin-top: 9vh;
+  height: 300vh;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 0.5fr 1.5fr;
+  background-color: var(--color-primary);
+}
+
+.r-stry-img {
   grid-column: 1;
-  grid-row: 3;
+  grid-row: 1;
+  justify-self: center;
+  align-self: center;
+  background-image: url("../img/parsley-about.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50vh;
+  height: 55vh;
 }
 
-.lan-map {
-  grid-column: 2;
-  grid-row: 3;
+.r-stry-content {
+  color: var(--color-secondary);
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
 }
 
-@media screen and (max-height: 450px) {
-  .overlay a {
-    font-size: 20px;
+.r-stry-content h1 {
+  text-decoration: underline;
+}
+
+.r-stry-content h1,
+.r-stry-content h2 {
+  text-align: center;
+}
+
+.r-stry-content h2,
+.r-stry-content p {
+  padding: 0 1em;
+  font-weight: 500;
+}
+
+.r-stry-content p {
+  text-indent: 9%;
+}
+
+/* 
+  ////////////////////////////////// RESPONSIVE SECTION /////////////////////////////////
+ */
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1880px) {
+  .icon--menu-toggle {
+    stroke-width: 1;
   }
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
+
+  #region {
+    margin: 0;
   }
+
+  .reg-container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // height: 100vh;
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-template-rows: 0.25fr 0.75fr;
+  }
+
+  .accordion {
+    height: 18vh;
+    width: 63%;
+  }
+
+  .panel {
+    width: 63%;
+  }
+
+  .ban-text {
+    height: 36vh;
+    font-size: 2.7em;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    align-self: center;
+    justify-self: center;
+  }
+
+  // .reg-content {
+  //   grid-column: 1 / span 3;
+  //   grid-row: 1;
+  //   justify-self: center;
+  //   align-self: start;
+  // }
+
+  // .reg-container p {
+  //   grid-column: 1;
+  //   grid-row: 1;
+  //   justify-self: center;
+  //   align-self: end;
+  // }
+  //   .reg-cat {
+  //     grid-column: 1;
+  //     grid-row: 2;
+
+  //     // display: flex;
+  //     // flex-direction: row;
+  //     // flex-wrap: wrap;
+  //   }
+
+  //   .reg-div-one {
+  //   }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 800px) and (max-width: 1024px) {
+  //CSS
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  //CSS
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  //CSS
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  //CSS
+}
+
+/* #Media
+================================================== */
+
+@media (max-width: 991px) {
 }
 
 @media screen and (min-width: 800px) {
@@ -768,4 +952,26 @@ header {
   nav li {
     margin-bottom: 0;
   }
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media screen and (max-height: 450px) {
 }
