@@ -32,3 +32,30 @@ site: http://zzs-produce.com/
  
  + After some time off due to holiday I have returned to work on projects. I feels good to be productive. I have finished the mobile menu and the region selection section. Although 
    it is still in need of some shaping. It is coming along together.
+   
+   // ------------------------------------------------------------------- 1/52021 ---------------------------------------------------------------------------------- //
+   
+   
+   HAPPY NEW YEAR!!!
+   
+   + I have finished with the redesign of ZZ's Produce. I have completed the initial tasks of adding a language translator and a google map API. I found that implementing google
+     maps was a bit more trouble some. The task was to add 2 markers on the map so that a user could locate locations easier. However the Javascript seemed problematic. Upon my
+     research I stumbled upon a third party API (atlismaps.com) with a far more user friendly and user options available. I have published the site to test it's live capabilities.
+     And will clean up any bugs the following days.
+     
+     ++ Remaining Task : 
+      - Test and clean up any issues.
+      - Expand on content for certian sections.
+      - Run a DOORDash type capabilty on a project based test. For self develepment and for possible implementation on live site in future.
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
